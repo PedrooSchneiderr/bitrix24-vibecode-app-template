@@ -1,0 +1,16 @@
+:root { --bg: #f6f7f9; --card: #fff; --text: #1f2933; --muted: #6b7785; --bar: #2f80ed; --won: #27ae60; --err: #c0392b; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 16px; font: 14px/1.4 system-ui, sans-serif; background: var(--bg); color: var(--text); }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+h1 { font-size: 18px; margin: 0; }
+input { width: 72px; padding: 4px; }
+#summary { margin: 12px 0; color: var(--muted); }
+#state { margin: 12px 0; }
+#state.error { color: var(--err); }
+#funnel { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.stage { background: var(--card); border-radius: 6px; padding: 8px 10px; }
+.stage .row { display: flex; justify-content: space-between; }
+.stage .track { height: 8px; background: #e4e7eb; border-radius: 4px; margin-top: 6px; overflow: hidden; }
+.stage .fill { height: 100%; background: var(--bar); }
+.stage.won .fill { background: var(--won); }
+.stage.empty { opacity: .6; }

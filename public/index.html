@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funil de Negócios</title>
+  <!-- O deploy.js troca __SERVER_ID__ pelo id real do servidor antes de empacotar. -->
+  <link rel="icon" href="/api/server-icons/__SERVER_ID__">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Funil de Negócios</h1>
+    <label>Pipeline <input id="category" type="number" min="0" value="0"></label>
+  </header>
+  <section id="summary" hidden></section>
+  <section id="state" role="status"></section>
+  <ol id="funnel"></ol>
+  <script src="app.js"></script>
+</body>
+</html>

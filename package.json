@@ -1,0 +1,14 @@
+{
+  "name": "bitrix24-vibecode-app-template",
+  "version": "1.0.0",
+  "description": "Template de app Node (BFF) para a plataforma Alaio Vibecode / Bitrix24: dashboard de funil embarcado no CRM.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/vibeClient.js && node --check src/funnel.js && node --check public/app.js && node --check scripts/deploy.js"
+  },
+  "license": "MIT",
+  "author": "Pedro Schneider"
+}
